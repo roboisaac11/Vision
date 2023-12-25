@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "d8YXUxcF/CGod9os1nlS8uP0/WvusS6PeG95T05WIYaPgK/Nt+7o0Sl0KMsP2Hf1zy5QDN5fI8YULlzroN4x/w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\isaac\\OneDrive\\Coding\\Vision\\Vision.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\isaac\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\isaac\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\isaac\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}
