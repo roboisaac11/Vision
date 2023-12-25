@@ -7,6 +7,10 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Vision
 {
+    /// <summary>
+    /// The main Game1 class inherits from Microsoft.Xna.Framework.Game.
+    /// It handles loading content, updating, and drawing the game.
+    /// </summary>
     public class Game1 : Game
     {
         private GraphicsDeviceManager _graphics;
@@ -23,15 +27,23 @@ namespace Vision
             IsMouseVisible = true;
         }
 
+        /// <summary>
+        /// Initialize sets up the enemies list and choppingBlock list.
+        /// It calls the base Initialize method.
+        /// </summary>
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
             enemies = new List<Sprite>();
             choppingBlock = new List<Enemy>();
-            
+
             base.Initialize();
         }
 
+        /// <summary>
+        /// LoadContent creates the SpriteBatch and loads textures.
+        /// It creates the player and enemy Sprite objects.
+        /// </summary>
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
@@ -51,16 +63,22 @@ namespace Vision
             // TODO: use this.Content to load your game content here
         }
 
+        /// <summary>
+        /// Update handles input, updates all Sprites, and removes dead enemies.
+        /// It calls the base Update method.
+        /// </summary>
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            foreach (Enemy sprite in enemies){
+            foreach (Enemy sprite in enemies)
+            {
                 sprite.Update(gameTime);
             }
 
-            foreach (Enemy sprite in choppingBlock){
+            foreach (Enemy sprite in choppingBlock)
+            {
                 enemies.Remove(sprite);
             }
 
@@ -71,14 +89,19 @@ namespace Vision
             base.Update(gameTime);
         }
 
+        /// <summary>
+        /// Draw clears the screen, draws all sprites, and ends the SpriteBatch.
+        /// It calls the base Draw method.
+        /// </summary>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(new Color(37,0,56));
+            GraphicsDevice.Clear(new Color(37, 0, 56));
             _spriteBatch.Begin(samplerState: SamplerState.PointClamp);
 
             player.Draw(_spriteBatch);
 
-            foreach (Enemy sprite in enemies){
+            foreach (Enemy sprite in enemies)
+            {
                 sprite.Draw(_spriteBatch);
             }
 
@@ -87,3 +110,4 @@ namespace Vision
         }
     }
 }
+
