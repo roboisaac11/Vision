@@ -1,0 +1,12 @@
+{
+  "commands": {
+    "create": {
+      "prompt": "Create a new file in the language specified. Then write the program descibed",
+      "context": {
+        "codebase": true,
+        "currentDir": true
+      },
+      "description": "Create a new file"
+    }
+  }
+}

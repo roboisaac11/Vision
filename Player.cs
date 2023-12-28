@@ -25,6 +25,11 @@ namespace Vision
             this.collisionGroup = collisionGroup;
             this.speed = speed;
         }
+        public Player(List<Texture2D[]> textures, Vector2 position, Color color, int width, int height, List<Sprite> collisionGroup, string name = "", int speed = 5) : base(textures, position, color, width, height, name)
+        {
+            this.collisionGroup = collisionGroup;
+            this.speed = speed;
+        }
 
         public void Update(GameTime gameTime, List<Enemy> choppingBlock)
         {
@@ -48,11 +53,19 @@ namespace Vision
             float changeX = 0;
             if (_keyboard.IsKeyDown(Keys.Right))
             {
+                hflip = false;
+                ChangeAnimation(0);
                 changeX += speed;
             }
             else if (_keyboard.IsKeyDown(Keys.Left))
             {
+                ChangeAnimation(0);
+                hflip = true;
                 changeX -= speed;
+            }
+            else{
+                // Set to idle animation
+                ChangeAnimation(1);
             }
 
             // Move X

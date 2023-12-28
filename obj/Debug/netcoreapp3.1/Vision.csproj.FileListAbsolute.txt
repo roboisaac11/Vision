@@ -23,3 +23,7 @@ C:\Users\isaac\OneDrive\Coding\Vision\obj\Debug\netcoreapp3.1\Vision.csproj.Copy
 C:\Users\isaac\OneDrive\Coding\Vision\obj\Debug\netcoreapp3.1\Vision.dll
 C:\Users\isaac\OneDrive\Coding\Vision\obj\Debug\netcoreapp3.1\Vision.pdb
 C:\Users\isaac\OneDrive\Coding\Vision\obj\Debug\netcoreapp3.1\Vision.genruntimeconfig.cache
+C:\Users\isaac\OneDrive\Coding\Vision\bin\Debug\netcoreapp3.1\Content\sprite-WALK1.xnb
+C:\Users\isaac\OneDrive\Coding\Vision\bin\Debug\netcoreapp3.1\Content\sprite-WALK2.xnb
+C:\Users\isaac\OneDrive\Coding\Vision\bin\Debug\netcoreapp3.1\Content\sprite-WALK3.xnb
+C:\Users\isaac\OneDrive\Coding\Vision\bin\Debug\netcoreapp3.1\Content\sprite-WALK4.xnb

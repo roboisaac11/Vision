@@ -1,2 +1,6 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
 "C:/Users/isaac/OneDrive/Coding/Vision/Content/sprite.png","C:/Users/isaac/OneDrive/Coding/Vision/Content/bin/DesktopGL/Content/sprite-static.xnb","TextureProcessor","Texture2DContent",257,1621,0.3776573
+"C:/Users/isaac/OneDrive/Coding/Vision/Content/sprite-WALK1.png","C:/Users/isaac/OneDrive/Coding/Vision/Content/bin/DesktopGL/Content/sprite-WALK1.xnb","TextureProcessor","Texture2DContent",259,1621,0.3433053
+"C:/Users/isaac/OneDrive/Coding/Vision/Content/sprite-WALK2.png","C:/Users/isaac/OneDrive/Coding/Vision/Content/bin/DesktopGL/Content/sprite-WALK2.xnb","TextureProcessor","Texture2DContent",274,1621,0.0095095
+"C:/Users/isaac/OneDrive/Coding/Vision/Content/sprite-WALK3.png","C:/Users/isaac/OneDrive/Coding/Vision/Content/bin/DesktopGL/Content/sprite-WALK3.xnb","TextureProcessor","Texture2DContent",313,1621,0.0097647
+"C:/Users/isaac/OneDrive/Coding/Vision/Content/sprite-WALK4.png","C:/Users/isaac/OneDrive/Coding/Vision/Content/bin/DesktopGL/Content/sprite-WALK4.xnb","TextureProcessor","Texture2DContent",313,1621,0.0457794

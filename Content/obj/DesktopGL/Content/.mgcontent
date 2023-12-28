@@ -5,8 +5,16 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/isaac/OneDrive/Coding/Vision/Content/sprite.png</File>
+    <File>C:/Users/isaac/OneDrive/Coding/Vision/Content/sprite-WALK1.png</File>
+    <File>C:/Users/isaac/OneDrive/Coding/Vision/Content/sprite-WALK2.png</File>
+    <File>C:/Users/isaac/OneDrive/Coding/Vision/Content/sprite-WALK3.png</File>
+    <File>C:/Users/isaac/OneDrive/Coding/Vision/Content/sprite-WALK4.png</File>
   </SourceFiles>
   <DestFiles>
     <File>sprite-static.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

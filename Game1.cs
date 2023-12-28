@@ -16,6 +16,7 @@ namespace Vision
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         Player player;
+        List<Texture2D[]> playerAnimations;
 
         List<Sprite> enemies;
         List<Enemy> choppingBlock;
@@ -37,6 +38,8 @@ namespace Vision
             enemies = new List<Sprite>();
             choppingBlock = new List<Enemy>();
 
+            playerAnimations = new List<Texture2D[]>();
+
             base.Initialize();
         }
 
@@ -51,10 +54,25 @@ namespace Vision
             Texture2D playerTexture = Content.Load<Texture2D>("sprite-static");
             Texture2D enemyTexture = Content.Load<Texture2D>("sprite-static");
 
+            // playerAnimations[0][0] = Content.Load<Texture2D>("sprite-WALK1");
+            // playerAnimations[0][1] = Content.Load<Texture2D>("sprite-WALK2");
+            // playerAnimations[0][2] = Content.Load<Texture2D>("sprite-WALK3");
+            // playerAnimations[0][3] = Content.Load<Texture2D>("sprite-WALK4");
+            playerAnimations.Add(new Texture2D[4] {
+                Content.Load<Texture2D>("sprite-WALK1"),
+                Content.Load<Texture2D>("sprite-WALK2"),
+                Content.Load<Texture2D>("sprite-WALK3"),
+                Content.Load<Texture2D>("sprite-WALK4")
+            });
+
+            playerAnimations.Add(new Texture2D[1] {
+                Content.Load<Texture2D>("sprite-static")
+            });
+
             int width = playerTexture.Width * 3;
             int height = playerTexture.Height * 3;
 
-            player = new Player(playerTexture, new Vector2(0, 0), Color.White, width, height, enemies, "Player", 10);
+            player = new Player(playerAnimations, new Vector2(0, 0), Color.White, width, height, enemies, "Player", 10);
 
             enemies.Add(new Enemy(enemyTexture, new Vector2(100, 100), Color.Red, width, height, player, "Bad Guy 1"));
             enemies.Add(new Enemy(enemyTexture, new Vector2(400, 300), Color.Red, width, height, player, "Bad Guy 2"));
